@@ -1,0 +1,46 @@
+<html></html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label class="input-label">Email</label>
+      <input id="email" placeholder="Email" required="" type="email"/>
+      <div class="password-container">
+        <label class="input-label">Password</label>
+        <input id="password" placeholder="Password" required="" type="password"/>
+        <i class="fas toggle-password fa-eye-slash" onclick="togglePassword()" style="font-size: 12px; margin-top: 5px;"></i>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <label class="remember-me-label">
+          <input id="rememberMe" type="checkbox"/>
+          Remember me
+        </label>
+        <a class="forget-password-link"  href="#">
+          Forget Password?
+        </a>
+      </div>
+      <button class="btn" type="submit">
+        SIGN IN
+      </button>
+      <div class="divider">
+        Or Sign in with
+      </div>
+      <a class="btn google-btn" href="https://accounts.google.com/signin/v2/identifier?service=mail" target="_blank">
+        <img alt="Google logo" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAzFBMVEVHcEz////////+/v77+/vx8fL9/f309fX+/v739/f////09PXOz8/5+vr8/P3////////29vf///////84qlf8wAdGiPX8/PzsUUTqQjQsqFLrSj3S3/w6g/TqPCs0gPQgpUf85+bv9P+63sL62Nb+8ef4ycbw+PJkunkeePP81HXwgGv0jhzc5/3o9efX7N5Fr19Uj/WQy562zPr2trL94KDzoJrzoJv80Gjyl5H94qgyh9v7xzihsSp+wYV1sE5ZtXBmmvUynoWKrvzKDGT6AAAAE3RSTlMAW+TTeBLcHLMt1WsKzfUznkBIxSDAuAAAAUZJREFUKJFtktligkAMRUFZxKVuDMOAggpu1apVu+/t//9TkxBU1PsySQ4hlyGadpTd0fWOrV2R3eqyWhe80j1RpYCc7pmcI2tyaZimQw6bOTMplU9hpKIofJSUmgwtTCYq9EFhqKIJ5lbGdGIRAGhUQLNX6wRLOA2Y8vdpuvfVOJtaOjhdhL56yYrjU8cGFsRSLc4/x+DPfxBiSZN6LMlXUYXzVghBT8/7pPkdxFX28yzEO8HYI8U9dlQudMZx3AeInWWe+SrExxrhCLTre3E+M3P7FXznLn887z53a2PwGbjBLLvUP2jcYUC/FYdOA9d1g22SbN1fbizT9bUxXA+QguB4G2GlfbIFqw1i0GCzKmzDDQ1LZgPQLKHk5rAJpmSj0ykH0jxArW4V79yqF1bMkEckjYvFrTWIy0btApFsx7m68Ff1D4OdMHbngtKsAAAAAElFTkSuQmCC" width="20"/>
+        <span>Sign in with Google</span>
+      </a>
+      <div class="account-text" style="margin-top: 20px;">
+        Didn't have an account?
+        <a id="signup-link" href="signup.html">Sign up</a>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

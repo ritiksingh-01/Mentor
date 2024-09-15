@@ -1,0 +1,218 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .container input[type="text"], .container input[type="email"], .container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .container input[type="text"]:focus, .container input[type="email"]:focus, .container input[type="password"]:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .container input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 10px ;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 40px;
+    width: calc(100% - 20px);
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+  
+  .container button:hover {
+    background-color: #fff;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+  }
+  
+  .container .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #757575;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 40px;
+    width: calc(100% - 20px);
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .container .google-btn img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .container .google-btn:hover {
+    background-color: #f1f1f1;
+    color: #007BFF;
+  }
+  
+  .container .signin-link {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .container .signin-link a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .container .signin-link a:hover {
+    text-decoration: none;
+    color: #0056b3;
+  }
+  
+  .container .form-group {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 12px;
+    align-items: center;
+  }
+  
+  .container .form-group input[type="checkbox"] {
+    margin: 0 10px 0 0; 
+  }
+  
+  .container .form-group h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+  }
+  
+  .container .divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin: 5px auto;
+    position: relative;
+    height: 40px;
+  }
+  
+  .container .divider::before, .container .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .container .divider:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .container .divider:not(:empty)::after {
+    margin-left: .25em;
+  }
+  
+  .container .divider span {
+    padding: 0 10px;
+    background-color: #fff;
+  }
+  
+  .container {
+    animation: fadeIn 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .account-text {
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .remember-me label {
+    margin: 0;
+  }
+  
+  .password-container {
+    position: relative;
+    width: calc(100% - 20px);
+    margin: 5px 0;
+  }
+  
+  .password-container input {
+    width: calc(100% - 20px);
+    padding-right: 40px;
+  }
+  
+  .password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+  }

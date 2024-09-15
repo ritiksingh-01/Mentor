@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.navbar .logo img {
+    height: 30px;
+    margin-left: 130px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navbar .nav-links a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.navbar .nav-buttons {
+    display: flex;
+    gap: 30px;
+    margin-right: 130px;
+}
+
+.navbar .nav-buttons .login-button {
+    padding: 10px 40px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.navbar .nav-buttons .login-button:hover {
+    background-color: #fff;
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.navbar .nav-buttons .signup-button {
+    padding: 10px 40px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.navbar .nav-buttons .signup-button:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 130px;
+    margin-top: 160px; 
+}
+
+.hero .text {
+    max-width: 100%;
+}
+
+.hero .text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero .text h1 span {
+    color: #007bff;
+}
+
+.hero .text p {
+    font-size:  18px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.hero .text .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .text .buttons .find-mentor-button {
+    padding: 10px 30px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.hero .text .buttons .find-mentor-button:hover {
+    background-color: #fff;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.hero .text .buttons .be-mentor-button {
+    padding: 10px 30px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.hero .text .buttons .be-mentor-button:hover {
+    background-color: #007bff;
+    color: #fff ;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #0056b3;
+}
+
+.rectangle-icon {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    border-radius: 89px;
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.group-child1 {
+    position: absolute;
+    top: 120px;
+    left: 330px;
+    border-radius: 71px;
+    width: 150px;
+    height: 521px;
+    object-fit: cover;
+}
+
+.group-child2 {
+    position: absolute;
+    top: -120px;
+    left: 160px;
+    border-radius: 108px;
+    width: 150px;
+    height: 521px;
+    object-fit: cover;
+}
+
+.group-child3 {
+    position: relative;
+    left: 500px;
+    border-radius: 108px;
+    width: 150px;
+    height: 521px;
+    object-fit: cover;
+    margin-top: -50px;
+}
+
+.group-inner {
+    position: absolute;
+    top: 420px;
+    left: 160px;
+    border-radius: 90px;
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.group-item {
+    position: absolute;
+    top: -200px;
+    left: 330px;
+    border-radius: 79px;
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.rectangle-group {
+    position: absolute;
+    top: 50px;
+    right: 130px;
+    width: 500px;
+    height: 986px;
+}
+
+.group-wrapper {
+    width: 500px;
+    position: relative;
+    height: 986px;
+    padding: 50px;
+}
+
+.phstudent-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.skilllbridge {
+    top: 0px;
+    left: 30px;
+}
+
+.menubar {
+    position: absolute;
+    top: 74px;
+    left: 676px;
+    width : 150px;
+    height: 40px ;
+    background-color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+.menubar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar ul li {
+    margin-bottom:  10px;
+}
+
+.menubar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menubar ul li a:hover {
+    color: #007bff;
+}
+
+.nav-buttons button:hover + .menubar {
+    display: block;
+}

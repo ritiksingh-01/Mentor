@@ -1,0 +1,55 @@
+<html></html>
+<head>
+  <title>Sign Up</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <div class="form-group">
+      <h3>First name</h3>
+      <input placeholder="First name" style="width: calc(100% - 20px);" type="text"/>
+    </div>
+    <div class="form-group">
+      <h3>Last name</h3>
+      <input placeholder="Last name" style="width: calc(100% - 20px);" type="text"/>
+    </div>
+    <div class="form-group">
+      <h3>Email</h3>
+      <input class="full-width" placeholder="Email" required="" type="email"/>
+    </div>
+    <div class="form-group">
+      <h3>Create Password</h3>
+      <input class="full-width" placeholder="Create Password" type="password"/>
+    </div>
+    <div class="form-group">
+      <h3>Confirm Password</h3>
+      <div class="password-container">
+        <input class="full-width" placeholder="Confirm Password" type="password"/>
+        <i class="fas toggle-password fa-eye-slash" ></i>
+      </div>
+    </div>
+    <div class="remember-me">
+      <input id="remember-me" type="checkbox"/>
+      <label for="remember-me">Remember me</label>
+    </div>
+    <button style="width: calc(100% - 20px); height: 40px;">
+      CREATE ACCOUNT
+    </button>
+    <div class="signin-link" style="margin-top: 5px;">
+      Already have an account?
+      <a id="login-link" href="#">Sign in</a>
+    </div>
+    <div class="divider" style="width: calc(100% - 20px); margin: 5px auto;">
+      <span>OR</span>
+    </div>
+    <a href="https://accounts.google.com/signup" class="google-btn" style="width: calc(100% - 20px);">
+      <img alt="Google logo" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAzFBMVEVHcEz////////+/v77+/vx8fL9/f309fX+/v739/f////09PXOz8/5+vr8/P3////////29vf///////84qlf8wAdGiPX8/PzsUUTqQjQsqFLrSj3S3/w6g/TqPCs0gPQgpUf85+bv9P+63sL62Nb+8ef4ycbw+PJkunkeePP81HXwgGv0jhzc5/3o9efX7N5Fr19Uj/WQy562zPr2trL94KDzoJrzoJv80Gjyl5H94qgyh9v7xzihsSp+wYV1sE5ZtXBmmvUynoWKrvzKDGT6AAAAE3RSTlMAW+TTeBLcHLMt1WsKzfUznkBIxSDAuAAAAUZJREFUKJFtktligkAMRUFZxKVuDMOAggpu1apVu+/t//9TkxBU1PsySQ4hlyGadpTd0fWOrV2R3eqyWhe80j1RpYCc7pmcI2tyaZimQw6bOTMplU9hpKIofJSUmgwtTCYq9EFhqKIJ5lbGdGIRAGhUQLNX6wRLOA2Y8vdpuvfVOJtaOjhdhL56yYrjU8cGFsRSLc4/x+DPfxBiSZN6LMlXUYXzVghBT8/7pPkdxFX28yzEO8HYI8U9dlQudMZx3AeInWWe+SrExxrhCLTre3E+M3P7FXznLn887z53a2PwGbjBLLvUP2jcYUC/FYdOA9d1g22SbN1fbizT9bUxXA+QguB4G2GlfbIFqw1i0GCzKmzDDQ1LZgPQLKHk5rAJpmSj0ykH0jxArW4V79yqF1bMkEckjYvFrTWIy0btApFsx7m68Ff1D4OdMHbngtKsAAAAAElFTkSuQmCC" width="20"/>
+      Sign Up with Google
+    </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
