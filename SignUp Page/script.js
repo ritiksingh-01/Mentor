@@ -14,9 +14,9 @@ document.querySelectorAll('.toggle-password').forEach(item => {
   });
   
   document.addEventListener("DOMContentLoaded", function() {
-    var signupLink = document.getElementById("login-link");
-    signupLink.addEventListener("click", function(event) {
-      event.preventDefault();
-      window.location.href = "login.html";
+    var loginButton = document.querySelector(".signin-link");
+    loginButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.href = "../Login Page/login.html";
     });
-  });
+});

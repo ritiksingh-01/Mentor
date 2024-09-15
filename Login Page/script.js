@@ -12,7 +12,6 @@ function togglePassword() {
     var passwordField = document.getElementById("password");
     var rememberMeCheckbox = document.getElementById("rememberMe");
   
-    // Load saved email and password if they exist
     if (localStorage.getItem("rememberMe") === "true") {
       emailField.value = localStorage.getItem("email");
       passwordField.value = localStorage.getItem("password");
@@ -30,12 +29,14 @@ function togglePassword() {
         localStorage.removeItem("password");
         localStorage.setItem("rememberMe", false);
       }
-      // Add your form submission logic here
       alert("Form submitted!");
     });
   });
   
-// script.js
-document.getElementById("signup-link").addEventListener("click", function() {
-  window.location.href = "signup.html";
+  document.addEventListener("DOMContentLoaded", function() {
+    var signupButton = document.querySelector(".account-text");
+    signupButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.location.href = "../SignUp Page/signup.html";
+    });
 });

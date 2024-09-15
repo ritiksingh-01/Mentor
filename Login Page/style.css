@@ -1,185 +1,186 @@
 /* Global Styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container input[type="email"], .container input[type="password"], .container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  height: 30px;
+}
+
+.container input[type="email"]:focus, .container input[type="password"]:focus, .container input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: #0056b3;
+}
+
+.container .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .btn:hover {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.container .google-btn {
+  background-color: white;
+  color: #757575;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container .google-btn img {
+  margin-right: 10px;
+}
+
+.container .google-btn:hover {
+  background-color: #f1f1f1;
+  text-decoration: none;
+}
+
+.container .google-btn:hover span {
+  color: #007bff;
+}
+
+.container .divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+  font-size: 12px;
+}
+
+.container .divider::before, .container .divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.container .divider:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.container .divider:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input[type="password"] {
+  padding-right: 40px;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.input-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+.container {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
   }
-  
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  .container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    text-align: center;
-  }
-  
-  .container h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 600;
-  }
-  
-  .container input[type="email"], .container input[type="password"], .container input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0 20px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-    height: 40px;
-  }
-  
-  .container input[type="email"]:focus, .container input[type="password"]:focus, .container input[type="text"]:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  .container input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
-  .container a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .container a:hover {
-    color: #0056b3;
-  }
-  
-  .container .btn {
-    background-color: #007bff;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 10px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container .btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .container .google-btn {
-    background-color: white;
-    color: #757575 ;
-    border: 1px solid #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 15px 20px; 
-    border-radius: 10px;
-    width: 100%; 
-    box-sizing: border-box; 
-    font-size: 14px;
-  }
-  
-  .container .google-btn img {
-    margin-right: 10px;
-  }
-  
-  .container .google-btn:hover {
-    background-color: #f1f1f1;
-    text-decoration: none; 
-  }
-  
-  .container .google-btn:hover span {
-    color: #007bff; 
-  }
-  
-  .container .divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-    color: #666;
-    font-size: 12px;
-  }
-  
-  .container .divider::before, .container .divider::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .container .divider:not(:empty)::before {
-    margin-right: .25em;
-  }
-  
-  .container .divider:not(:empty)::after {
-    margin-left: .25em;
-  }
-  
-  .password-container {
-    position: relative;
-  }
-  
-  .password-container input[type="password"] {
-    padding-right: 40px; 
-  }
-  
-  .password-container .toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    /* transform: translateY(-5%); */
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .input-label {
-    font-size: 16px;
-    margin-bottom: 5px;
-    text-align: left;
-    display: block; 
-  }
-  
-  .container {
-    animation: fadeIn 0.5s;
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: scale(0.5);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  .account-text {
-    color: #666;
-    font-size: 12px;
-  }
-  
-  .remember-me-label {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .forget-password-link {
-    font-size: 12px;
-  }
+}
+
+.account-text {
+  color: #666;
+  font-size: 12px;
+}
+
+.remember-me-label {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.forget-password-link {
+  font-size: 12px;
+}

@@ -69,8 +69,8 @@
   
   .container button:hover {
     background-color: #fff;
-    color: #007BFF;
-    border: 1px solid #007BFF;
+    color: #007bff;
+    border: 1px solid #007bff;
   }
   
   .container .google-btn {
@@ -186,11 +186,9 @@
   }
   
   .remember-me {
+    font-size: 12px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    font-size: 14px;
   }
   
   .remember-me label {
@@ -199,8 +197,8 @@
   
   .password-container {
     position: relative;
-    width: calc(100% - 20px);
-    margin: 5px 0;
+    width: 100%
+    /* margin: 5px 0; */
   }
   
   .password-container input {
@@ -210,7 +208,7 @@
   
   .password-container .toggle-password {
     position: absolute;
-    right: 10px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
